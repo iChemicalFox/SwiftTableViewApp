@@ -13,9 +13,7 @@ struct WallResponseWrapped: Decodable { // TODO: CodingKeys
 }
 
 struct WallResponse: Decodable {
-    let count
     let items: [WallItems]
-    let groups: [Group]
 }
 
 struct WallItems: Decodable {

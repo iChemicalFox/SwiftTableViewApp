@@ -1,0 +1,6 @@
+framework module Pods_MySwiftTableApp {
+  umbrella header "Pods-MySwiftTableApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
