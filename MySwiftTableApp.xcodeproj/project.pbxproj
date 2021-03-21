@@ -25,7 +25,6 @@
 		5BCDAFF325C6F7D3004C1FF1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDAFF225C6F7D3004C1FF1 /* NetworkManager.swift */; };
 		5BCDAFFC25D020C8004C1FF1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDAFFB25D020C8004C1FF1 /* AuthService.swift */; };
 		5BCDAFFE25D1D2CF004C1FF1 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDAFFD25D1D2CF004C1FF1 /* AuthViewController.swift */; };
-		5BCDB00025D3281E004C1FF1 /* VKicon48.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BCDAFFF25D3281E004C1FF1 /* VKicon48.png */; };
 		5BCDB00425D46A06004C1FF1 /* VKAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDB00325D46A06004C1FF1 /* VKAPIManager.swift */; };
 		8F9D53524F0089AE5A0DF12A /* Pods_MySwiftTableAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEF872B581A2E2AD13B26B4 /* Pods_MySwiftTableAppTests.framework */; };
 		FC5F74A5B42A623EFCBF90A3 /* Pods_MySwiftTableApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE1E3030BDF3A92E39F6E7F /* Pods_MySwiftTableApp.framework */; };
@@ -73,7 +72,6 @@
 		5BCDAFF225C6F7D3004C1FF1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5BCDAFFB25D020C8004C1FF1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5BCDAFFD25D1D2CF004C1FF1 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		5BCDAFFF25D3281E004C1FF1 /* VKicon48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VKicon48.png; sourceTree = "<group>"; };
 		5BCDB00325D46A06004C1FF1 /* VKAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKAPIManager.swift; sourceTree = "<group>"; };
 		60894597C5E58417C1B06AF2 /* Pods-MySwiftTableAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftTableAppTests.release.xcconfig"; path = "Target Support Files/Pods-MySwiftTableAppTests/Pods-MySwiftTableAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		8875F5B478D7BD14C31B5055 /* Pods-MySwiftTableApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftTableApp.release.xcconfig"; path = "Target Support Files/Pods-MySwiftTableApp/Pods-MySwiftTableApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 				5BCDAFC425C6F622004C1FF1 /* Assets.xcassets */,
 				5BCDAFC625C6F622004C1FF1 /* LaunchScreen.storyboard */,
 				5BCDAFC925C6F622004C1FF1 /* Info.plist */,
-				5BCDAFF425C6F865004C1FF1 /* images */,
 				5B85201526077D260066BB53 /* WebImageView.swift */,
 			);
 			path = MySwiftTableApp;
@@ -219,14 +216,6 @@
 			);
 			path = Network;
 			sourceTree = "<group>";
-		};
-		5BCDAFF425C6F865004C1FF1 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				5BCDAFFF25D3281E004C1FF1 /* VKicon48.png */,
-			);
-			path = images;
-			sourceTree = SOURCE_ROOT;
 		};
 		8617117D130BA2FBAE388699 /* Pods */ = {
 			isa = PBXGroup;
@@ -351,7 +340,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BCDAFC825C6F622004C1FF1 /* LaunchScreen.storyboard in Resources */,
-				5BCDB00025D3281E004C1FF1 /* VKicon48.png in Resources */,
 				5BCDAFC525C6F622004C1FF1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -64,7 +64,7 @@ class HomeViewController: UITableViewController {
         return hight
     }
 
-    // TODO: Header?
+    // TODO: Header for change group wall
 
 //    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 //        let header: UIView = .init()
