@@ -15,6 +15,7 @@ final class WallModel {
     func getPosts(owner: GroupsId, complition: @escaping () -> Void) {
         var groupName = "Test"
         var iconURL = ""
+
         api.getGroupInfo(groupId: owner.rawValue) { (groupResponse) in
             guard let groupResponse = groupResponse else { return }
             if let name = groupResponse.first?.name {
@@ -26,7 +27,7 @@ final class WallModel {
             }
         }
 
-        api.getWallPosts(ownerId: "-\(owner.rawValue)", count: "15", filter: "owner", extended: "1") { (wallResponse) in
+        api.getWallPosts(ownerId: "-\(owner.rawValue)", count: "25", filter: "owner", extended: "1") { (wallResponse) in
             guard let wallResponse = wallResponse else { return }
             _ = wallResponse.items.map({ (wallItem) in
                 let date = Date(timeIntervalSince1970: wallItem.date)
@@ -36,7 +37,7 @@ final class WallModel {
                 dateFormatter.locale = Locale(identifier: "ru_RU")
                 let stringDate = dateFormatter.string(from: date)
 
-                self.posts.append(Post(text: wallItem.text, author: groupName, date: stringDate, imageURL: iconURL))
+                self.posts.append(Post(text: wallItem.text, author: groupName, date: stringDate, groupIconURL: iconURL))
             })
             complition()
         }

@@ -12,5 +12,5 @@ struct Post {
     let text: String
     let author: String
     let date: String
-    let imageURL: String
+    let groupIconURL: String
 }
