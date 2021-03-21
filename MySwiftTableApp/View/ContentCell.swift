@@ -27,9 +27,8 @@ class ContentCell: UITableViewCell {
         return label
     }()
 
-    let authorImageView: UIImageView = {
-        let imageView: UIImageView = .init()
-        imageView.image = .init(imageLiteralResourceName: "VKicon48")
+    var authorImageView: WebImageView = {
+        let imageView: WebImageView = .init()
         imageView.backgroundColor = .clear
         imageView.translatesAutoresizingMaskIntoConstraints = false
 

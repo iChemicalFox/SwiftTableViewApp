@@ -8,11 +8,12 @@
 
 import Foundation
 
-struct WallResponseWrapped: Decodable { // TODO: CodingKeys
+struct WallResponseWrapped: Decodable {
     let response: WallResponse
 }
 
 struct WallResponse: Decodable {
+    let count: Int
     let items: [WallItems]
 }
 
@@ -27,7 +28,12 @@ struct WallItems: Decodable {
 struct Group: Decodable {
     let id: Int
     let name: String
-    let type: String
-    let photo50: String // "photo_50"
+    let photo100: String // "photo_100"
+}
+
+struct Profile: Decodable {
+    let id: Int
+    let firstName: String
+    let lastName: String
     let photo100: String // "photo_100"
 }

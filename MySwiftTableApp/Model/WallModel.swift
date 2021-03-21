@@ -13,7 +13,20 @@ final class WallModel {
     private let api = VKAPIManager()
 
     func getPosts(owner: GroupsId, complition: @escaping () -> Void) {
-        api.getWallPosts(ownerId: owner.rawValue, count: "15", filter: "owner", extended: "1") { (wallResponse) in
+        var groupName = "Test"
+        var iconURL = ""
+        api.getGroupInfo(groupId: owner.rawValue) { (groupResponse) in
+            guard let groupResponse = groupResponse else { return }
+            if let name = groupResponse.first?.name {
+                groupName = name
+            }
+
+            if let url = groupResponse.first?.photo50 {
+                iconURL = url
+            }
+        }
+
+        api.getWallPosts(ownerId: "-\(owner.rawValue)", count: "15", filter: "owner", extended: "1") { (wallResponse) in
             guard let wallResponse = wallResponse else { return }
             _ = wallResponse.items.map({ (wallItem) in
                 let date = Date(timeIntervalSince1970: wallItem.date)
@@ -23,7 +36,7 @@ final class WallModel {
                 dateFormatter.locale = Locale(identifier: "ru_RU")
                 let stringDate = dateFormatter.string(from: date)
 
-                self.posts.append(Post(text: wallItem.text, author: "test", date: stringDate)) // TODO: author: wallGroup.name
+                self.posts.append(Post(text: wallItem.text, author: groupName, date: stringDate, imageURL: iconURL))
             })
             complition()
         }
@@ -31,8 +44,8 @@ final class WallModel {
 }
 
 extension WallModel {
-    enum GroupsId: String {
-        case bankiRu = "-17032179"
-        case spbLive = "-49684148"
+    enum GroupsId: Int {
+        case bankiRu = 17032179
+        case spbLive = 49684148
     }
 }

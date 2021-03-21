@@ -10,6 +10,8 @@
 		06A79E4BFE2EDD2079948642 /* Pods_MySwiftTableApp_MySwiftTableAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3D451F94DA64A4F1A3B530 /* Pods_MySwiftTableApp_MySwiftTableAppUITests.framework */; };
 		5B85200725DB11E10066BB53 /* VKAPIWallResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85200625DB11E10066BB53 /* VKAPIWallResponse.swift */; };
 		5B85200C25DC34D70066BB53 /* WallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85200B25DC34D70066BB53 /* WallModel.swift */; };
+		5B852014260635000066BB53 /* VKAPIGroupsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B852013260635000066BB53 /* VKAPIGroupsResponse.swift */; };
+		5B85201626077D260066BB53 /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85201526077D260066BB53 /* WebImageView.swift */; };
 		5BCDAFBC25C6F61E004C1FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDAFBB25C6F61E004C1FF1 /* AppDelegate.swift */; };
 		5BCDAFBE25C6F61E004C1FF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDAFBD25C6F61E004C1FF1 /* SceneDelegate.swift */; };
 		5BCDAFC025C6F61E004C1FF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDAFBF25C6F61E004C1FF1 /* HomeViewController.swift */; };
@@ -50,6 +52,8 @@
 		294DA2E2AC98811C67E9FCBC /* Pods-MySwiftTableAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftTableAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MySwiftTableAppTests/Pods-MySwiftTableAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B85200625DB11E10066BB53 /* VKAPIWallResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKAPIWallResponse.swift; sourceTree = "<group>"; };
 		5B85200B25DC34D70066BB53 /* WallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallModel.swift; sourceTree = "<group>"; };
+		5B852013260635000066BB53 /* VKAPIGroupsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKAPIGroupsResponse.swift; sourceTree = "<group>"; };
+		5B85201526077D260066BB53 /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 		5BCDAFB825C6F61E004C1FF1 /* MySwiftTableApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftTableApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BCDAFBB25C6F61E004C1FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BCDAFBD25C6F61E004C1FF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				5BCDAFEF25C6F712004C1FF1 /* Post.swift */,
 				5B85200B25DC34D70066BB53 /* WallModel.swift */,
 				5B85200625DB11E10066BB53 /* VKAPIWallResponse.swift */,
+				5B852013260635000066BB53 /* VKAPIGroupsResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				5BCDAFC625C6F622004C1FF1 /* LaunchScreen.storyboard */,
 				5BCDAFC925C6F622004C1FF1 /* Info.plist */,
 				5BCDAFF425C6F865004C1FF1 /* images */,
+				5B85201526077D260066BB53 /* WebImageView.swift */,
 			);
 			path = MySwiftTableApp;
 			sourceTree = "<group>";
@@ -474,8 +480,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B852014260635000066BB53 /* VKAPIGroupsResponse.swift in Sources */,
 				5BCDAFC025C6F61E004C1FF1 /* HomeViewController.swift in Sources */,
 				5BCDAFEE25C6F6DF004C1FF1 /* ContentCellContants.swift in Sources */,
+				5B85201626077D260066BB53 /* WebImageView.swift in Sources */,
 				5BCDAFBC25C6F61E004C1FF1 /* AppDelegate.swift in Sources */,
 				5B85200C25DC34D70066BB53 /* WallModel.swift in Sources */,
 				5BCDAFF325C6F7D3004C1FF1 /* NetworkManager.swift in Sources */,

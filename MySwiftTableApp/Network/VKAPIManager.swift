@@ -23,6 +23,19 @@ final class VKAPIManager {
             response(decoded?.response)
         }
     }
+
+    func getGroupInfo(groupId: Int, response: @escaping ([GroupResponse]?) -> Void) {
+        let params = ["group_id": "\(groupId)"]
+        network.request(method: .getById, params: params) { (data, error) in
+            if let error = error {
+                print("Data error: \(error.localizedDescription)")
+                response(nil)
+            }
+
+            let decoded = self.decodeJson(type: GroupsResponseWrapped.self, from: data)
+            response(decoded?.response)
+        }
+    }
 }
 
 // MARK: - Decode

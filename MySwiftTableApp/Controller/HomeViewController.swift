@@ -44,6 +44,7 @@ class HomeViewController: UITableViewController {
         cell.wordLabel.text = wallModel.posts[indexPath.row].text
         cell.timeAndDateLabel.text = wallModel.posts[indexPath.row].date
         cell.authorNameLabel.text = wallModel.posts[indexPath.row].author
+        cell.authorImageView.set(imageURL: wallModel.posts[indexPath.row].imageURL)
 
         return cell
     }
